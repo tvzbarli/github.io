@@ -29,6 +29,12 @@
       border-radius: 50%;
       border: 4px solid #fff;
       margin-bottom: 20px;
+      animation: pulse 3s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0px rgba(255,255,255,0.7); }
+      50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(255,255,255,0.9); }
+      100% { transform: scale(1); box-shadow: 0 0 0px rgba(255,255,255,0.7); }
     }
     h1 {
       font-size: 28px;
@@ -65,7 +71,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- Înlocuiește "logo.png" cu link către poza ta -->
+    <!-- Înlocuiește "logo.png" cu numele fișierului tău real -->
     <img src="logo.png" alt="Logo Zbârli TV">
     <h1>Zbârli TV</h1>
     <p>Link-uri oficiale</p>
@@ -83,4 +89,3 @@
   </script>
 </body>
 </html>
-
