@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mihai Boldea — Link-uri oficiale</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f1115;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    p {
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+    a {
+      display: block;
+      background: #1d2230;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px;
+      margin: 10px auto;
+      width: 250px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    a:hover {
+      background: #6ee7ff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mihai Boldea</h1>
+  <p>Link-uri oficiale</p>
+
+  <a href="https://youtube.com/@USERNAME" target="_blank">YouTube</a>
+  <a href="https://open.spotify.com/artist/ID" target="_blank">Spotify</a>
+  <a href="https://instagram.com/USERNAME" target="_blank">Instagram</a>
+  <a href="https://tiktok.com/@USERNAME" target="_blank">TikTok</a>
+  <a href="mailto:contact@domeniul-tau.ro">Email</a>
+
+  <p style="margin-top: 40px; font-size: 14px; color: #777;">© <span id="year"></span> Mihai Boldea</p>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
