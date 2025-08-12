@@ -3,90 +3,98 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zbârli TV — Link-uri</title>
-
+  <title>Zbârli TV — Link-uri oficiale</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --text:#fff; --muted:#dfe3ea; --card:rgba(0,0,0,.55);
-      --btn:#ffffff; --btnText:#1f2430; --wa:#25D366;
-      --radius:28px;
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(270deg, #ff9a9e, #ffb347, #c471ed, #48c6ef);
+      background-size: 800% 800%;
+      animation: bg 20s ease infinite;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
     }
-
-    body{
-      margin:0; font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      color:var(--text); text-align:center; padding:40px 20px;
-      background:linear-gradient(270deg,#ff9a9e,#ffb347,#c471ed,#48c6ef);
-      background-size:800% 800%; animation:bg 20s ease infinite;
+    @keyframes bg {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-    @keyframes bg{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-
-    .card{
-      max-width:520px; margin:auto; background:var(--card);
-      border-radius:20px; padding:28px 24px 22px; box-shadow:0 10px 30px rgba(0,0,0,.3);
+    .card {
+      max-width: 520px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
-
-    /* Logo – PNG transparent, fără încadrări */
-    .logo{
-      width:clamp(240px, 42vw, 360px);
-      height:auto; object-fit:contain; margin:4px auto 14px;
-      filter:drop-shadow(0 10px 12px rgba(0,0,0,.45));
-      animation:pulse 3s ease-in-out infinite;
+    .logo {
+      width: clamp(240px, 42vw, 360px);
+      height: auto;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 10px 12px rgba(0,0,0,.45));
     }
-    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
-
-    /* Lista link-uri */
-    .links{display:grid; gap:12px; margin-top:6px}
-    .btn{
-      display:flex; align-items:center; gap:12px; justify-content:flex-start;
-      padding:14px 18px; border-radius:var(--radius);
-      background:var(--btn); color:var(--btnText); text-decoration:none;
-      font-weight:700; box-shadow:0 6px 14px rgba(0,0,0,.18);
-      transition:transform .15s ease, background .15s ease;
+    .links {
+      display: grid;
+      gap: 12px;
     }
-    .btn:hover{transform:translateY(-2px); background:#eef7ff}
-    .btn svg{width:22px; height:22px; flex:0 0 22px}
-
-    .btn-wa{background:var(--wa); color:#053b18}
-    .btn-wa:hover{background:#5af08e}
-
-    footer{margin-top:12px; color:#cfd5e0; font-size:.9rem}
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: flex-start;
+      padding: 14px 18px;
+      border-radius: 28px;
+      background: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+      transition: transform .15s ease, background .15s ease;
+    }
+    .btn img {
+      width: 28px;
+      height: 28px;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #eef7ff;
+    }
+    .btn-wa {
+      background: #25D366;
+      color: white;
+    }
+    .btn-wa:hover {
+      background: #5af08e;
+    }
+    footer {
+      margin-top: 12px;
+      color: #cfd5e0;
+      font-size: .9rem;
+    }
   </style>
 </head>
 <body>
-  <main class="card" role="main">
-    <img class="logo" src="logo.png" alt="Zbârli TV" loading="lazy" decoding="async">
+  <main class="card">
+    <img class="logo" src="logo.png" alt="Zbârli TV" loading="lazy">
 
-    <nav class="links" aria-label="Linkuri">
-      <!-- YouTube -->
-      <a class="btn" href="https://www.youtube.com/@ZbarliTV" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3.1 3.1 0 0 0-2.2-2.2C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.3.5A3.1 3.1 0 0 0 .5 6.2 32.3 32.3 0 0 0 0 12a32.3 32.3 0 0 0 .5 5.8 3.1 3.1 0 0 0 2.2 2.2c1.8.5 9.3.5 9.3.5s7.5 0 9.3-.5a3.1 3.1 0 0 0 2.2-2.2A32.3 32.3 0 0 0 24 12a32.3 32.3 0 0 0-.5-5.8zM9.8 15.5V8.5L15.8 12l-6 3.5z"/></svg>
-        YouTube
+    <nav class="links">
+      <a class="btn" href="https://www.youtube.com/@ZbarliTV" target="_blank">
+        <img src="youtube.svg" alt="YouTube"> YouTube
       </a>
-
-      <!-- Instagram -->
-      <a class="btn" href="https://www.instagram.com/zbarlitv/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.8a6.2 6.2 0 1 0 6.2 6.2A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.6-10.8a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5z"/><path d="M17.5 2H6.5A4.5 4.5 0 0 0 2 6.5v11A4.5 4.5 0 0 0 6.5 22h11a4.5 4.5 0 0 0 4.5-4.5v-11A4.5 4.5 0 0 0 17.5 2zm3 15.5a3 3 0 0 1-3 3h-11a3 3 0 0 1-3-3v-11a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg>
-        Instagram
+      <a class="btn" href="https://www.instagram.com/zbarlitv/" target="_blank">
+        <img src="instagram.svg" alt="Instagram"> Instagram
       </a>
-
-      <!-- TikTok -->
-      <a class="btn" href="https://www.tiktok.com/@zbarlitv?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8.2a7.8 7.8 0 0 1-4.8-1.6v6.6a5.6 5.6 0 1 1-5.6-5.5c.4 0 .8 0 1.2.1v2.4a3.2 3.2 0 1 0 2.4 3.1V2h2.4a5.4 5.4 0 0 0 4.4 4.2z"/></svg>
-        TikTok
+      <a class="btn" href="https://www.tiktok.com/@zbarlitv" target="_blank">
+        <img src="tiktok.svg" alt="TikTok"> TikTok
       </a>
-
-      <!-- Email -->
       <a class="btn" href="mailto:tvzbarli@gmail.com">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.5h19v13h-19z" fill="none" stroke="currentColor"/><path d="M2.5 6l9.5 7 9.5-7" fill="none" stroke="currentColor"/></svg>
-        Email
+        <img src="email.svg" alt="Email"> Email
       </a>
-
-      <!-- WhatsApp (schimbă numărul) -->
-      <a class="btn btn-wa" href="https://wa.me/4XXXXXXXXXX?text=Salut%20Zb%C3%A2rli!%20Vreau%20s%C4%83%20vorbim%20:%29" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.5 23.5l1.7-6A10 10 0 1 1 12 22a9.9 9.9 0 0 1-5-1.3zM7.7 9.1c.2-.5.4-.5.7-.5h.5c.2 0 .5 0 .7.6.2.5.8 1.8.8 1.8s.1.4-.1.6l-.4.5c-.1.2-.3.3 0 .7s1 .9 1.7 1.3c.8.4 1.1.3 1.3.1l.6-.7c.1-.2.3-.2.5-.1l1.7.8c.5.2.4.4.3.8l-.8 1.7c-.3.6-.7.6-1.2.6-.4 0-2.5-.1-4.8-2.1S7 11.4 7 11c0-.4.2-.8.7-1.9z"/></svg>
-        WhatsApp (contact direct)
+      <a class="btn btn-wa" href="https://wa.me/4XXXXXXXXXX?text=Salut%20Zbârli!">
+        <img src="whatsapp.svg" alt="WhatsApp"> WhatsApp (direct)
       </a>
     </nav>
 
