@@ -6,22 +6,34 @@
   <title>Zbârli TV — Link-uri oficiale</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
   <style>
+    /* Fundal animat Zbârli */
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      background: linear-gradient(270deg, #ff9a9e, #ffb347, #c471ed, #48c6ef);
+      background-size: 800% 800%;
+      animation: gradientBG 20s ease infinite;
       color: #fff;
       text-align: center;
       padding: 40px 20px;
     }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Container */
     .container {
       max-width: 500px;
       margin: auto;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.55);
       border-radius: 20px;
       padding: 30px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
+
+    /* Logo animat */
     img {
       width: 120px;
       height: 120px;
@@ -36,6 +48,8 @@
       50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(255,255,255,0.9); }
       100% { transform: scale(1); box-shadow: 0 0 0px rgba(255,255,255,0.7); }
     }
+
+    /* Titlu și descriere */
     h1 {
       font-size: 28px;
       margin-bottom: 5px;
@@ -44,6 +58,8 @@
       color: #ddd;
       margin-bottom: 30px;
     }
+
+    /* Butoane linkuri */
     a {
       display: block;
       background: #fff;
@@ -62,6 +78,8 @@
       transform: scale(1.05);
       background: #6ee7ff;
     }
+
+    /* Footer */
     footer {
       margin-top: 20px;
       font-size: 14px;
@@ -71,8 +89,8 @@
 </head>
 <body>
   <div class="container">
-    <!-- Înlocuiește "logo.png" cu numele fișierului tău real -->
-    <img src="logo.png" alt="Logo Zbârli TV">
+    <!-- Înlocuiește "Logo 3d 1.png" cu numele exact al fișierului tău din repo -->
+    <img src="Logo 3d 1.png" alt="Logo Zbârli TV">
     <h1>Zbârli TV</h1>
     <p>Link-uri oficiale</p>
 
